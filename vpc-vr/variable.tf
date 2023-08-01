@@ -106,20 +106,21 @@ variable "tag_owner" {
 variable "availability_zone1" {
   description = "The availability zone for the resource."
   type        = string
-  default     = "ap-northeast-1a"  # Provide a default value or leave it blank if you prefer to pass the value during runtime.
+  default     = "us-east-1a"  # Provide a default value or leave it blank if you prefer to pass the value during runtime.
 }
 
 variable "availability_zone2" {
   description = "The availability zone for the resource."
   type        = string
-  default     = "ap-northeast-1c"  # Provide a default value or leave it blank if you prefer to pass the value during runtime.
+  default     = "us-east-1b"  # Provide a default value or leave it blank if you prefer to pass the value during runtime.
 }
 variable "availability_zone3" {
   description = "The availability zone for the resource."
   type        = string
-  default     = "ap-northeast-1d"  # Provide a default value or leave it blank if you prefer to pass the value during runtime.
+  default     = "us-east-1c"  # Provide a default value or leave it blank if you prefer to pass the value during runtime.
 }
 variable "vpc_cidr_block" {
   description = "CIDR block for the VPC"
   type        = string
+  default     = ["10.0.0.0/16"]
 }
